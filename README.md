@@ -63,33 +63,28 @@ Team STOPPABLE
 
 | Name           | Primary Role                    | Secondary Role | Strengths Brought to the Project |
 | -------------- | ------------------------------- | -------------- | -------------------------------- |
-| `Saumitra Bata` | `[Electronics / Coding / App ]` | `Documentation`  | `Documentation, Gift of Gab `|
-| `Anish Deodhar`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
-| `Virat Dhoot` | `[Electronics / Coding / App ]` | `Documentation`  | `Documentation, Gift of Gab `|
-| `Nitisha Dung`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| `Saumitra Bata` | `[Hardware / Coding ]` | `[Documentation]`  | `Documentation, Gift of Gab `|
+| `Anish Deodhar`  | `[Hardware / Fabrication]`   | `[Coding]`     | `Material Handling, Gift of Gab`    |
+| `Virat Dhoot` | `[Documentation/ Hardware  ]` | `[Coding]`  | `Documentation, Material Handling `|
+| `Nitisha Dung`  | `[Fabrication/Harware]`   | `[Coding]`     | `Material Handling, Hardware`    |
+
+<img width="1600" height="1131" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Team%20Photograph.jpeg" />
 
 ## 1.3 Project Title
 
-`"Project Project"`
-
-`(because Project-or)`
+`"Sync-Box"`
 
 <img width="1600" height="1131" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Team%20Photograph.jpeg" />
 
 ## 1.4 One-Line Pitch
 
-`A projected, fully customizable time portal where engineering education is done through PUBG battlefield in the comfort of our home`
+`A Time synced automated medicine box with unique tags for individuals to take precise medication at right time catered to every individual.`
 
 ## 1.5 Expanded Project Idea
-
-In 1–2 paragraphs, explain:
-
-- what your project is,
-- what kind of experience it creates,
-- what technologies are involved.
-
-**Response:**  
-`A projected and fully customizable time portal can transform engineering education into an immersive PUBG-style battlefield experience from the comfort of home. In this environment, students can learn engineering concepts by entering a virtual battlefield where challenges, obstacles, and missions are designed around real technical problems. Instead of passively studying theory, learners actively apply concepts such as electronics, coding, sensors, robotics, mechanics, and system design to complete missions, solve problems, and progress through different levels. This approach makes engineering education more interactive, engaging, and practical by combining gaming, simulation, and hands-on problem-solving in a familiar and exciting format.`
+ 
+`A time-synced automated medicine box with unique RFID tags ensures each person receives the correct medication at the right time. The system alerts the user when a dose is due, verifies their identity using an RFID tag, and then dispenses the medicine, reducing errors like missed or incorrect doses.
+It combines technologies like an Raspberry Pi Pico 2, RFID module, motors for dispensing, and sensors for verification.This creates a smart, reliable system that improves medication adherence and patient safety.
+`
 
 ---
 
