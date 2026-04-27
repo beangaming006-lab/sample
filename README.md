@@ -1,4 +1,4 @@
-# SKILL LAB PRATICAL HACKATHON
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/d717c3b2-cd2f-401b-965f-9e29639ff6a5" /># SKILL LAB PRATICAL HACKATHON
 
 ## Final Project README
 
@@ -205,8 +205,17 @@ Include:
 
 ## 6.3 Input / Output Map
 
-| System Part                              | Type            | What It Does                                                               |
-
+| System Part                              | Type            | What It Does                                                               | 
+| ---------------------------------- | ------------------- | ------------------------------------------------------------------------------ |
+| `RFID Reader (MFRC522)`              | Input               | Reads RFID card UID to identify which patient is accessing the system        |
+| `Touch Sensors (TOUCH_1 to TOUCH_5)` | Input               | Detect user interaction to confirm that each medicine has been taken         |
+| `Time Slot Logic (millis())`       | Input (Virtual)     | Generates time-based slots to decide which medicines should be dispensed       |
+| `Patient UID Data`                   | Input (Stored Data) | Matches scanned RFID UID with predefined patient identities                  |
+| `LEDs (LED_1 to LED_5)`             | Output              | Indicate which medicine compartments should be accessed for current slot      |
+| `Red LED (LED_RED)`                | Output              | Alerts user if medicine already taken or invalid action                        |
+| `Serial Monitor (Serial.print`)    | Output              | Displays system status, UID, patient info, and slot data for debugging/logging |
+| `Medicine Logic (giveMedicine()`)  | Process             | Decides which medicines to activate based on patient and time slot             |
+| `Touch Confirmation Loop`            | Process             | Ensures all required medicines are taken before marking slot complete        |
 
 ---
 
@@ -258,13 +267,12 @@ Add a sketch with labels showing:
 
 | Component                 | Quantity | Purpose                               |
 | ------------------------- | --------:| ------------------------------------- |
-| `[ESP32]`                 | `1`      | `[Main controller]`                   |
-| `[L298N Motor Driver]`    | `1`      | `[Control Motors]`                    |
-| `[BO Motors]`             | `2`      | `[Rotate wheels]`                     |
-| `[Buck Converter]`        | `1`      | `[Power ESP32]`                       |
-| `[Li Ion Battery Pack]`   | `2`      | `[Power]`                             |
-| `[Projector]`             | `1`      | `[Display obstacles]`                 |
-| `Camera (Webcam / Phone)` | `1`      | `[Tracks car position using markers]` |
+| `[Raspberry Pi Pico 2]`   | `1`      | `[Main controller]`                   |
+| `[Touch Sensor]`          | `5`      | `[Verification]`                      |
+| `[RFID (RC522)]`           | `1`      | `[Individual Detection]`             |
+| `[LED]`                   | `8`      | `[Indication]`                        |
+| `[Buzzer]`                | `2`      | `[Alert]`                             |
+
 
 ## 8.2 Wiring Plan
 
@@ -290,7 +298,7 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Question         | Response                                                                                                                                          |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Power source     | `Battery (Li-ion pack)`                                                                                                                           |
+| Power source     | `Device(Laptop)`                                                                                                                           |
 | Voltage required | `~6–8.4V for motors (via driver), stepped down to 5V for ESP32 (buck converter)`                                                                  |
 | Current concerns | `Motors can draw high current under load, which may cause voltage drops affecting ESP32 and WiFi stability`                                       |
 | Safety concerns  | `Avoid over-discharging Li-ion batteries, ensure proper voltage regulation, prevent short circuits, and secure wiring to avoid loose connections` |
@@ -580,19 +588,14 @@ Multiple adjustments were made throughout the process, including refining alignm
 
 ## 16.2 Build Photos
 
-Add photos throughout the project.
-
-Suggested images:
-
 - early sketch,
-- prototype,
-- electronics testing,
-- mechanism test,
-- app screenshot,
+<img width="960" height="1280" alt="WhatsApp Image 2026-04-24 at 9 46 02 AM (1)" src="" />
+- Initial Build ,
+<img width="960" height="1280" alt="WhatsApp Image 2026-04-24 at 9 46 02 AM (1)" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Basic%20Build.jpeg" />
+- Build testing,
+<img width="960" height="1280" alt="WhatsApp Image 2026-04-24 at 9 46 02 AM (1)" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Build%20Testing.jpeg" />
 - final build.
-- <img width="960" height="1280" alt="WhatsApp Image 2026-04-24 at 9 46 02 AM (1)" src="https://github.com/user-attachments/assets/74baa570-5770-483e-be6d-d2f03386e37c" />
-
-
+- <img width="960" height="1280" alt="WhatsApp Image 2026-04-24 at 9 46 02 AM (1)" src="" />
 
 
 
