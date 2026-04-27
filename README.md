@@ -1,198 +1,371 @@
-# 🌟 SKILL LAB PRACTICAL HACKATHON  
-## Final Project Documentation
+# 🧠💊 SYNC-BOX  
+### *A Smart, Time-Synced RFID-Based Medicine Dispensing System*
 
 ---
 
-# 1. Team Identity
+## 🎯 SKILL LAB PRACTICAL HACKATHON
 
-## 1.1 Studio / Group Name  
-**Team STOPPABLE**
-
----
-
-## 1.2 Team Members
-
-| Name | Primary Role | Secondary Role | Strengths |
-|------|-------------|---------------|----------|
-| **Saumitra Bata** | Hardware & Coding | Documentation | Strong communication, structured thinking |
-| **Anish Deodhar** | Fabrication & Hardware | Coding | Material handling, practical execution |
-| **Virat Dhoot** | Documentation & Hardware | Coding | Organization, clarity in presentation |
-| **Nitisha Dung** | Fabrication & Hardware | Coding | Hands-on building, hardware integration |
+> **Project Weight:** 100%  
+> **Team Size:** 4 Students  
+> **Duration:** 8 Hours  
+> **Effort:** 32 Team Hours  
+> **Category:** Interactive Embedded System  
 
 ---
 
-## 1.3 Project Title  
-### **Sync-Box**
+# ✨ Project Overview
+
+**Sync-Box** is an intelligent, time-synchronized medicine dispensing system designed to ensure that **the right person takes the right medicine at the right time**.
+
+Using **RFID authentication**, **time-slot logic**, and **interactive feedback**, the system eliminates confusion in multi-user environments such as **homes, hostels, and elderly care centers**.
 
 ---
 
-## 1.4 One-Line Pitch  
-*A time-synchronized, RFID-enabled smart medicine system that ensures the right person takes the right medication at the right time.*
+# 👥 Team Identity
+
+## 🏷️ Team Name  
+**STOPPABLE**
+
+## 👨‍💻 Team Members
+
+| Name              | Primary Role             | Secondary Role  | Strengths |
+|-------------------|--------------------------|------------------|----------|
+| Saumitra Bata     | Hardware & Coding        | Documentation    | Communication, Clarity |
+| Anish Deodhar     | Fabrication              | Coding           | Material Handling |
+| Virat Dhoot       | Documentation            | Hardware         | Structured Thinking |
+| Nitisha Dung      | Hardware & Fabrication   | Coding           | Precision, Assembly |
 
 ---
 
-## 1.5 Expanded Project Idea
-
-**Sync-Box** is an intelligent medication management system designed for shared environments such as old-age homes, hostels, or care facilities.
-
-The system integrates:
-- RFID-based identity recognition  
-- Time-based medication scheduling  
-- Interactive feedback (LEDs, touch sensors, buzzer)  
-
-Each user carries a unique RFID tag. When scanned:
-- The system identifies the patient  
-- Determines the current time slot  
-- Activates only the relevant medicine compartments  
-
-This ensures:
-- No confusion between users  
-- No incorrect medication  
-- No accidental overdosing  
-
-By combining embedded electronics with simple interaction design, Sync-Box transforms a passive medicine box into an **active, decision-driven assistant**.
+# 🚀 Project Title  
+## **SYNC-BOX**
 
 ---
 
-# 2. Project Philosophy
+# 💡 One-Line Pitch
 
-## 2.1 Experience Focus
-
-While rooted in a real-world problem, Sync-Box is designed as an **interactive system experience**:
-
-- RFID scan creates personalization  
-- LEDs provide visual guidance  
-- Touch sensors provide feedback  
-- Alerts create urgency  
-
-This makes the system:
-- intuitive  
-- responsive  
-- engaging  
+> A **smart RFID-enabled medicine box** that ensures **accurate, personalized, and timely medication delivery**.
 
 ---
 
-# 3. Inspiration
+# 🧩 Expanded Idea
 
-## 3.1 References
+Sync-Box is a **multi-user intelligent medicine management system**.
+
+It:
+- Alerts users when it’s time to take medicine  
+- Identifies users via **RFID cards**  
+- Dispenses only their assigned medication  
+- Prevents overdosing  
+- Tracks adherence  
+
+### 🔧 Core Technologies:
+- Raspberry Pi Pico 2  
+- RC522 RFID Module  
+- Touch Sensors  
+- LEDs + Buzzer  
+- Time-slot Logic  
+
+---
+
+# 🎭 Experience Philosophy
+
+This project is not just a utility — it’s an **interactive experience**.
+
+It transforms:
+- ❌ Confusion → ✅ Clarity  
+- ❌ Dependency → ✅ Independence  
+- ❌ Manual tracking → ✅ Smart automation  
+
+---
+
+# 🌍 Inspiration
 
 | Source | Insight |
 |------|--------|
-| Scientific Study | Medication errors are a leading cause of preventable harm |
-| Research Articles | Multi-drug management is complex in shared environments |
+| NCBI Report | Medication errors cause preventable deaths |
+| Wikipedia (Overmedication) | Multi-drug management is complex |
 
 ---
 
-## 3.2 Original Contribution
+# ⚡ Original Twist
 
-Sync-Box introduces:
+Unlike traditional pill boxes:
 
-- Identity-based dispensing (RFID)  
-- Time-aware logic  
-- State-based tracking (Taken / Not Taken)  
-- Error prevention (double-dose blocking)  
-
-This transforms the system from a **passive reminder** into an **active decision engine**.
+✅ **User Verification (RFID)**  
+✅ **Time-slot intelligence**  
+✅ **Multi-user safe system**  
+✅ **Real-time tracking possibility**  
 
 ---
 
-# 4. User Experience Journey
+# 👤 User Journey
 
-It is morning in a shared care facility.
+At **8:00 AM**, Sync-Box lights up.
 
-A patient approaches the Sync-Box and taps their RFID card.
+A user:
+1. Walks to the device  
+2. Taps their RFID card  
+3. System verifies identity  
+4. Correct compartment is indicated  
+5. User takes medicine  
+6. Confirms via touch sensor  
 
-Instantly:
-- The system recognizes them  
-- Identifies the correct medicines  
-- Lights up only the required compartments  
+➡️ System logs: **“Dose Taken”**
 
-The user simply follows the lights.
-
-After taking each medicine:
-- They confirm via touch  
-- The system records completion  
-
-If another patient arrives:
-- The system adapts instantly  
-- Displays a different set of medicines  
-
-Meanwhile, a caregiver can monitor:
-- Who has taken medication  
-- Who is late  
-- Who missed doses  
+Caregiver can:
+- Monitor remotely  
+- Identify missed doses  
+- Track compliance  
 
 ---
 
-# 5. Definition of Success
+# ✅ Definition of Success
 
-## 5.1 Usability
+## ✔️ Usable System
 
-A system is usable if:
-- it is easy to understand  
-- requires minimal thinking  
-- prevents user errors  
-
-Sync-Box achieves this by:
-- replacing instructions with visual guidance  
-- replacing memory with automation  
-- replacing trust with verification  
+A successful system:
+- Is intuitive for elderly users  
+- Prevents incorrect usage  
+- Requires minimal learning  
 
 ---
 
-## 5.2 Minimum Viable System
+## 🎯 Minimum Viable Version
 
-The core system includes:
-
-- RFID identification  
-- Time-slot logic  
-- LED guidance  
-- Touch confirmation  
-- Basic alert system  
+- Single user  
+- LED/Buzzer reminder  
+- Button confirmation  
+- Basic logging  
 
 ---
 
-## 5.3 Stretch Features
+## 🚀 Stretch Features
 
-- Automatic dispensing  
-- Mobile/web dashboard  
-- Remote alerts  
+- Automated dispensing  
+- Web dashboard  
 - Voice assistant integration  
 
 ---
 
-# 6. System Overview
+# ⚙️ System Overview
 
-## 6.1 System Type
+## 🔁 Workflow
 
-- Electronics-based  
-- Sensor-based  
-- Interactive system  
-- Logic-driven system  
+### INPUT
+- RFID Scan  
+- Time Logic  
+- Touch Confirmation  
 
----
+### PROCESS
+- User identification  
+- Time-slot verification  
+- Dose validation  
 
-## 6.2 High-Level Working
-
-### Input Stage
-- RFID → patient identity  
-- Time → slot detection  
-- Touch → confirmation  
-
-### Processing Stage
-- Match RFID to patient  
-- Determine current slot  
-- Fetch medicine schedule  
-- Check if already taken  
-
-### Output Stage
-- LEDs indicate medicines  
-- Red LED shows error  
-- Buzzer gives alerts  
-- Serial logs activity  
+### OUTPUT
+- LEDs guide user  
+- Buzzer alerts  
+- Serial logging  
 
 ---
 
-## 6.3 Core Logic
+## 🧠 System Architecture
 
-The system operates as a **state machine**:
+```
+RFID → Pico → Logic Engine → LEDs / Alerts → Confirmation → Logging
+```
+
+---
+
+# 🔌 Electronics
+
+## 🧾 Components
+
+| Component | Qty | Purpose |
+|----------|----|--------|
+| Raspberry Pi Pico 2 | 1 | Controller |
+| RFID RC522 | 1 | User Identification |
+| Touch Sensors | 5 | Confirmation |
+| LEDs | 8 | Visual Feedback |
+| Buzzer | 2 | Alerts |
+
+---
+
+## 🔗 Wiring Highlights
+
+- SPI Communication (RFID)  
+- GPIO-controlled LEDs  
+- Touch sensors → Input pins  
+- Common Ground architecture  
+
+---
+
+# 🔋 Power Plan
+
+| Parameter | Value |
+|----------|------|
+| Source | USB |
+| Voltage | 3.3V |
+| Concern | LED brightness drop |
+
+---
+
+# 💻 Software Logic
+
+## 🔄 Flow
+
+1. Initialize system  
+2. Wait for RFID scan  
+3. Identify user  
+4. Check time slot  
+5. Activate LEDs  
+6. Wait for touch confirmation  
+7. Log status  
+8. Reset  
+
+---
+
+# 📦 Bill of Materials
+
+| Item | Cost (₹) |
+|------|--------|
+| Electronics | 400 |
+| Mechanical | 200 |
+| Contingency | 300 |
+| **Total** | **900** |
+
+---
+
+# 🛠️ Fabrication
+
+## Process
+
+- CAD Design  
+- Laser Cutting  
+- Assembly  
+- Wiring  
+- Finishing  
+- Iteration  
+
+---
+
+# 🧪 Testing
+
+## ✔️ Tested Areas
+
+- RFID Detection  
+- Sensor Input  
+- LED Output  
+- Time Logic  
+
+---
+
+## 🐞 Debug Log Example
+
+| Issue | Fix |
+|------|-----|
+| Unstable detection | Adjusted wiring |
+
+---
+
+# 🎮 Final Outcome
+
+## 🧾 Description
+
+The final Sync-Box successfully:
+- Identifies users  
+- Prevents incorrect dosage  
+- Guides via LEDs  
+- Logs actions  
+
+---
+
+## ✅ What Works Well
+
+- Reliable RFID detection  
+- Clear user interaction  
+- Simple and intuitive design  
+
+---
+
+## ⚠️ Improvements Needed
+
+- Add display screen  
+- Improve enclosure finish  
+- Add cloud dashboard  
+
+---
+
+## 🔄 Changes from Plan
+
+- Simplified mechanical dispensing  
+- Focus shifted to reliability over complexity  
+
+---
+
+# 🧠 Reflection
+
+## 💪 Team Strengths
+- Strong collaboration  
+- Clear communication  
+- Efficient execution  
+
+## ⏳ Challenges
+- Time constraints  
+- Hardware debugging  
+
+---
+
+## 📚 Technical Learnings
+
+- Embedded systems integration  
+- RFID communication  
+- Real-time logic handling  
+
+---
+
+## 🎨 Design Learnings
+
+- Simplicity improves usability  
+- Visual feedback is powerful  
+- Iteration is essential  
+
+---
+
+## ⏱️ If We Had 1 More Hour
+
+We would:
+- Add web dashboard  
+- Improve aesthetics  
+- Optimize code  
+
+---
+
+# 📸 Build Gallery
+
+### 🧩 Concept
+![Concept](https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/non%20labled.png)
+
+### 🔧 Build
+![Build](https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Basic%20Build.jpeg)
+
+### 🧪 Testing
+![Testing](https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Build%20Testing.jpeg)
+
+---
+
+# ✅ Submission Checklist
+
+- [x] Documentation complete  
+- [x] Build completed  
+- [x] Testing done  
+- [x] Reflection written  
+
+---
+
+# 🌟 Final Note
+
+> Sync-Box is not just a device —  
+> it’s a step toward **safer, smarter, and independent living**.
+
+---
