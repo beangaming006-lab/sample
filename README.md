@@ -139,7 +139,10 @@ List what inspired the project.
 
 ## 5.1 Definition of “Usable”
 
+`A product is usable if it allows its intended users to achieve their goals easily, efficiently, and without confusion or error, in real-world conditions.`
 
+`A device can be functional but still not usable.
+Example: your medicine box project could dispense pills correctly—but if an old person can’t understand the interface, it’s useless in practice.`
 
 ## 5.2 Minimum Usable Version
 
@@ -147,6 +150,7 @@ What is the smallest version of this project that still delivers the core experi
 
 **Response:**  
 
+`The smallest version of this project that still delivers the core experience is a simple, single-user medicine reminder system that ensures the patient takes their medication on time and allows a caregiver to know whether it was taken. This can be achieved using a microcontroller Raspberry Pico Pi 2, a buzzer or LED for alerts, and a single push button for user confirmation. At the scheduled time, the device gives an audible or visual alert prompting the user to take the medicine from a basic compartment. Once the medicine is taken, the user presses the button to confirm, and this status is sent over Wi-Fi to a simple webpage or dashboard for the caregiver to monitor remotely. This minimal setup removes complex features like RFID, multiple users, or automated dispensing, yet still fulfills the essential goal of timely medication intake and remote awareness, which defines the core value of the system.`
 
 ## 5.3 Stretch Features
 
