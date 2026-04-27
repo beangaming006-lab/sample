@@ -121,11 +121,7 @@ List what inspired the project.
 
 ## 3.2 Original Twist
 
-What makes your project original?
-
-**Response:**  
-
-
+It is a RFID-based personalized dispensing. Instead of just releasing pills at a fixed time, this system ensures the right person is taking the right medicine, which solves a real-world problem in multi-user environments. On top of that, features like dose verification (via sensors), alerts system turn it from a basic dispenser into a connected healthcare assistant that works according to individual needs.
 ---
 
 # 4. Project Intent
