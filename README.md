@@ -1,4 +1,4 @@
-# 🧠💊 SYNC-BOX  
+# 💊 SYNC-BOX  
 ### *A Smart, Time-Synced RFID-Based Medicine Dispensing System*
 
 ---
